@@ -35,12 +35,13 @@ ___
 
 ___
 
-/pesticide_add_permission `<player_name>`
+/pesticide_add_permission `<player_name>` <br>
 <sub> このプラグインのコマンドを利用するのに必要な権限を付与します </sub>
 <br>
-/pesticide_remove_permission `<player_name>`
+/pesticide_remove_permission `<player_name>` <br>
 <sub> このプラグインのコマンドを利用するのに必要な権限を剥奪します </sub>
 <br>
-/pesticide_mute `<player_name>`
+/pesticide_mute `<player_name>` <br>
 <sub> 指定したプレイヤーをミュートします </sub>
+<br>
 ___
