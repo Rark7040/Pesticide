@@ -6,7 +6,7 @@ ___
 
 # Anti-Cheat Plugin 
 
-> **Warning**
+> **Warning** <br>
 > このプラグインは全てのチートを防止するものではありません。
 
 ## Version
