@@ -22,11 +22,11 @@ ___
 - [ ] Fly
 
 ## Command
-| <pre align="center" padding="0"> command </pre>                     | <pre align="center" padding="0"> description </pre>    |
-|:----------------------------------------------------------|:--------------------------------------------|
-| <sub> /pesticide_add_permission `<player_name>` </sub>    | <sub> このプラグインのコマンドを利用するのに必要な権限を付与します </sub> |
-| <sub> /pesticide_remove_permission `<player_name>` </sub> | <sub> このプラグインのコマンドを利用するのに必要な権限を剥奪します </sub> |
-| <sub> /pesticide_mute `<player_name>` </sub>              | <sub> 指定したプレイヤーをミュートします </sub>              |     
-| <sub> /pesticide_unmute `<player_name>` </sub>            | <sub> 指定したプレイヤーのミュートを解除します </sub>           |     
-| <sub> /pesticide_ban `<player_name>` </sub>               | <sub> 指定したプレイヤーをアクセス禁止にします </sub>           |     
-| <sub> /pesticide_unban `<player_name>` </sub>             | <sub> 指定したプレイヤーのアクセス禁止を解除します </sub>         |
+| <pre align="center"><strong> command </strong></pre>      | <pre align="center"><strong> description </strong></pre> |
+|:----------------------------------------------------------|:---------------------------------------------------------|
+| <sub> /pesticide_add_permission `<player_name>` </sub>    | <sub> このプラグインのコマンドを利用するのに必要な権限を付与します </sub>              |
+| <sub> /pesticide_remove_permission `<player_name>` </sub> | <sub> このプラグインのコマンドを利用するのに必要な権限を剥奪します </sub>              |
+| <sub> /pesticide_mute `<player_name>` </sub>              | <sub> 指定したプレイヤーをミュートします </sub>                           |     
+| <sub> /pesticide_unmute `<player_name>` </sub>            | <sub> 指定したプレイヤーのミュートを解除します </sub>                        |     
+| <sub> /pesticide_ban `<player_name>` </sub>               | <sub> 指定したプレイヤーをアクセス禁止にします </sub>                        |     
+| <sub> /pesticide_unban `<player_name>` </sub>             | <sub> 指定したプレイヤーのアクセス禁止を解除します </sub>                      |
