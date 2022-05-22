@@ -6,6 +6,9 @@ ___
 
 # Anti-Cheat Plugin 
 
+**Warning**
+このプラグインは全てのチートを防止するものではありません。
+
 ## Version
 - PHP8.0
 - PocketMine-MP4.0
