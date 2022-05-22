@@ -1,5 +1,4 @@
 <div align="center">
-    ![This is an image](/assets/title.png)
     <img src="https://github.com/Rark7040/Pesticide/blob/dev/assets/title.png" alt="Pesticide" width=600px height=auto> 
 </div>
 
@@ -38,7 +37,10 @@ ___
 
 /pesticide_add_permission `<player_name>`
 <sub> このプラグインのコマンドを利用するのに必要な権限を付与します </sub>
-
+<br>
 /pesticide_remove_permission `<player_name>`
 <sub> このプラグインのコマンドを利用するのに必要な権限を剥奪します </sub>
+<br>
+/pesticide_mute `<player_name>`
+<sub> 指定したプレイヤーをミュートします </sub>
 ___
