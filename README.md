@@ -22,7 +22,7 @@ ___
 - [ ] Fly
 
 ## Command
-| <pre align="center"> command </pre>                       | <pre align="center"> description </pre>     |
+| <pre align="center" padding="0"> command </pre>                     | <pre align="center" padding="0"> description </pre>    |
 |:----------------------------------------------------------|:--------------------------------------------|
 | <sub> /pesticide_add_permission `<player_name>` </sub>    | <sub> このプラグインのコマンドを利用するのに必要な権限を付与します </sub> |
 | <sub> /pesticide_remove_permission `<player_name>` </sub> | <sub> このプラグインのコマンドを利用するのに必要な権限を剥奪します </sub> |
