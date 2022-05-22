@@ -1,4 +1,5 @@
 <div align="center">
+    ![This is an image](/assets/title.png)
     <img src="https://github.com/Rark7040/Pesticide/blob/dev/assets/title.png" alt="Pesticide" width=600px height=auto> 
 </div>
 
