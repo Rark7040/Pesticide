@@ -1,3 +1,1 @@
-![pesticide](https://github.com/rark7040/pesticide/assets/title.png "pesticide")
-
-
+<img src="https://github.com/Rark7040/Pesticide/blob/dev/assets/title.png" alt="Pesticide" width=20px height=20px align="center"> 
