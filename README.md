@@ -37,7 +37,7 @@ ___
 
 /pesticide_add_permission `<player_name>` 
 > このプラグインのコマンドを利用するのに必要な権限を付与します
-___
+
 /pesticide_remove_permission `<player_name>`
 > このプラグインのコマンドを利用するのに必要な権限を剥奪します
 ___
