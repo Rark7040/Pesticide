@@ -1,5 +1,5 @@
 name : Pesticide
 version : 1.0.0
 api : 4.0.0
-main : src\rarkhopper\pesticide
+main : src\rarkhopper\pesticide\Pesticide
 author : RarkHopper
