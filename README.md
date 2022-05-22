@@ -22,27 +22,13 @@ ___
 - [ ] Fly
 
 ## Command
-|                                       |                     |
-|:---------------------------------------------|:-------------------------------|
-| command                                      | description                    |
-| /pesticide_add_permission `<player_name>`    | このプラグインのコマンドを利用するのに必要な権限を付与します |
-| /pesticide_remove_permission `<player_name>` | このプラグインのコマンドを利用するのに必要な権限を剥奪します |
-| /pesticide_mute `<player_name>`              | 指定したプレイヤーをミュートします              |     
-| /pesticide_unmute `<player_name>`            | 指定したプレイヤーのミュートを解除します           |     
-| /pesticide_ban `<player_name>`               | 指定したプレイヤーをアクセス禁止にします           |     
-| /pesticide_unban `<player_name>`             | 指定したプレイヤーのアクセス禁止を解除します         |
-
-
-
-___
-
-/pesticide_add_permission `<player_name>` <br>
-<sub> このプラグインのコマンドを利用するのに必要な権限を付与します </sub>
-<br>
-/pesticide_remove_permission `<player_name>` <br>
-<sub> このプラグインのコマンドを利用するのに必要な権限を剥奪します </sub>
-<br>
-/pesticide_mute `<player_name>` <br>
-<sub> 指定したプレイヤーをミュートします </sub>
-<br>
-___
+| <pre></pre>                                               |     <pre></pre>                                        |
+|:----------------------------------------------------------|:--------------------------------------------|
+| command                                                   | description                                 |
+| <sub> /pesticide_add_permission `<player_name>` </sub>    | <sub> このプラグインのコマンドを利用するのに必要な権限を付与します </sub>       |
+| <sub> /pesticide_remove_permission `<player_name>` </sub> | <sub> このプラグインのコマンドを利用するのに必要な権限を剥奪します </sub> |
+| <sub> /pesticide_mute `<player_name>` </sub>              | <sub> 指定したプレイヤーをミュートします </sub>              |     
+| <sub> /pesticide_unmute `<player_name>` </sub>            | <sub> 指定したプレイヤーのミュートを解除します </sub>           |     
+| <sub> /pesticide_ban `<player_name>` </sub>               | <sub> 指定したプレイヤーをアクセス禁止にします </sub>           |     
+| <sub> /pesticide_unban `<player_name>` </sub>             | <sub> 指定したプレイヤーのアクセス禁止を解除します </sub>         |
+|                                                           |                                             |
