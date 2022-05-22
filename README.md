@@ -20,13 +20,13 @@ ___
 - [ ] Spam 
 - [ ] InstaBreak 
 - [ ] Fly
-
+``
 ## Command
-| command                                      |                    description |
-|:---------------------------------------------|-------------------------------:|
+| command                                      | description                    |
+|:---------------------------------------------|:-------------------------------|
 | /pesticide_add_permission `<player_name>`    | このプラグインのコマンドを利用するのに必要な権限を付与します |
 | /pesticide_remove_permission `<player_name>` | このプラグインのコマンドを利用するのに必要な権限を剥奪します |
-| /pesticide_mute `<player_name>`              |              指定したプレイヤーをミュートします |     
-| /pesticide_unmute `<player_name>`            |           指定したプレイヤーのミュートを解除します |     
-| /pesticide_ban `<player_name>`               |           指定したプレイヤーをアクセス禁止にします |     
-| /pesticide_unban `<player_name>`             |         指定したプレイヤーのアクセス禁止を解除します |
+| /pesticide_mute `<player_name>`              | 指定したプレイヤーをミュートします              |     
+| /pesticide_unmute `<player_name>`            | 指定したプレイヤーのミュートを解除します           |     
+| /pesticide_ban `<player_name>`               | 指定したプレイヤーをアクセス禁止にします           |     
+| /pesticide_unban `<player_name>`             | 指定したプレイヤーのアクセス禁止を解除します         |``
