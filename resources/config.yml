@@ -1,0 +1,33 @@
+enable_anti_speed: true
+  limit_distance: 20
+
+enable_anti_reach: true
+  limit_distance: 3
+
+enable_anti_auto-clicker: true
+  limit_cps: 20
+  left_click: true
+  right_click: true
+
+enable_anti_nuker: true
+  limit_break_cnt: 10
+
+enable_anti_spam: true
+  limit_speed: 1 #20ticks
+  buffer_mode: true
+    compress_by_edit_distance: true
+      edit_distance: 2
+
+enable_anti_fly: true
+  overlook_cnt: 5
+
+enable_anti_no-clip: true
+enable_anti_anti-immobile: true
+enable_anti_instabreak: true
+
+# overlook = 0
+# kick = 1
+# ban = 2
+penalty: 1
+banned_by_stack: false #アンチチートに複数引っかかるとBanされるようになります
+  stack: 10

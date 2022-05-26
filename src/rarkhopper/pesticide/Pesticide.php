@@ -32,3 +32,4 @@ final class Pesticide extends PluginBase{
 		self::$setting = new RuntimeSetting;
 	}
 }
+//TODO 引っかかった時にイベント発火
