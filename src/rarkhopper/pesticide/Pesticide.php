@@ -8,10 +8,12 @@ use pocketmine\plugin\PluginBase;
 final class Pesticide extends PluginBase{
 	const CONF_NAME = 'config.yml';
 
+	protected static self $instance;
 	protected static Container $container;
 
 	protected function onEnable():void{
 		$this->loadConfig();;
+		$this->initInstance();
 		$this->initContainer();
 	}
 
@@ -19,6 +21,11 @@ final class Pesticide extends PluginBase{
 		if(isset(self::$container)){
 			self::$container->final();
 		}
+	}
+
+	public static function getInstance():self{
+		if(!isset(self::$instance)) throw new \RuntimeException('instance is not defined');
+		return self::$instance;
 	}
 
 	public static function getContainer():Container{
@@ -36,6 +43,10 @@ final class Pesticide extends PluginBase{
 			new RuntimeSetting,
 			new AntiCheatsRegistry
 		);
+	}
+
+	protected function initInstance():void{
+		self::$instance = $this;
 	}
 }
 //TODO 引っかかった時にイベント発火
