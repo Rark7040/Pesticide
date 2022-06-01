@@ -8,19 +8,19 @@ use pocketmine\plugin\PluginBase;
 final class Pesticide extends PluginBase{
 	const CONF_NAME = 'config.yml';
 
-	protected static RuntimeSetting $setting;
+	protected static Container $container;
 
 	protected function onEnable():void{
 		$this->loadConfig();;
-		$this->initSetting();
+		$this->initContainer();
 	}
 
 	protected function onDisable():void{
 
 	}
 
-	public static function getSetting():RuntimeSetting{
-		return self::$setting;
+	public static function getContainer():Container{
+		return self::$container;
 	}
 
 	protected function loadConfig():void{
@@ -28,8 +28,11 @@ final class Pesticide extends PluginBase{
 		(new ConfigLoader($this->getConfig()))->load();
 	}
 
-	protected function initSetting():void{
-		self::$setting = new RuntimeSetting;
+	protected function initContainer():void{
+		self::$container = new Container(
+			new RuntimeSetting,
+			new AntiCheatsRegistry
+		);
 	}
 }
 //TODO 引っかかった時にイベント発火
