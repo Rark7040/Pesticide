@@ -16,10 +16,13 @@ final class Pesticide extends PluginBase{
 	}
 
 	protected function onDisable():void{
-
+		if(isset(self::$container)){
+			self::$container->final();
+		}
 	}
 
 	public static function getContainer():Container{
+		if(!isset(self::$container)) throw new \RuntimeException('container is not defined');
 		return self::$container;
 	}
 

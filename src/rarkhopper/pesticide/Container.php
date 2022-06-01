@@ -12,6 +12,10 @@ class Container{
 		$this->registry = $registry;
 	}
 
+	public function final():void{
+		$this->registry->final();
+	}
+
 	public function getRegistry():AntiCheatsRegistry{
 		return $this->registry;
 	}
