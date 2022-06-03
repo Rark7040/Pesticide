@@ -2,7 +2,8 @@
   "enable": true
   "limit_distance": 20
 
-"anti_reach": true
+"anti_reach":
+  "enable": true
   "limit_distance": 3
 
 "anti_auto-clicker":
