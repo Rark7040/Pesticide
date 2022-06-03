@@ -19,7 +19,8 @@
 "anti_spam":
   "enable": true
   "limit_speed": 1 #20ticks
-  "buffer_mode": true
+  "buffer_mode":
+    "enable": true
     "compress_by_edit_distance":
       "enable": true
       "edit_distance": 2
