@@ -4,8 +4,7 @@ declare(strict_types=1);
 namespace rarkhopper\pesticide\setting;
 
 abstract class SettingItem{
-	final private function __construct()
-	{
+	final private function __construct(){
 		//NOOP
 	}
 
