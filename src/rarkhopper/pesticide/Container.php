@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace rarkhopper\pesticide;
 
+use rarkhopper\pesticide\setting\RuntimeSetting;
+
 class Container{
 	protected RuntimeSetting $setting;
 	protected AntiCheatsRegistry $registry;

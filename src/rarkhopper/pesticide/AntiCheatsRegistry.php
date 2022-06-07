@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace rarkhopper\pesticide;
 
+use rarkhopper\pesticide\setting\RuntimeSetting;
+
 class AntiCheatsRegistry{
 	/** @var array<AntiCheat> */
 	protected array $anti_cheats = [];
