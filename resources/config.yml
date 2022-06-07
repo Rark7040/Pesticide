@@ -1,3 +1,8 @@
+# overlook = 0
+# kick = 1
+# ban = 2
+"penalty": 1
+
 "anti_speed":
   "enable": true
   "limit_distance": 20
@@ -21,25 +26,14 @@
   "limit_speed": 1 #20ticks
   "buffer_mode":
     "enable": true
-    "compress_by_edit_distance":
-      "enable": true
-      "edit_distance": 2
 
 "anti_fly":
   "enable": true
   "overlook_cnt": 5
 
-"anti_no-clip":
+"anti_noclip":
   "enable": true
 "anti_anti-immobile":
   "enable": true
 "anti_instabreak":
   "enable": true
-
-# overlook = 0
-# kick = 1
-# ban = 2
-"penalty": 1
-"banned_by_stack":
-  "enable": false #アンチチートに複数引っかかるとBanされるようになります
-  "stack": 10
