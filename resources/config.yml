@@ -24,8 +24,7 @@
 "anti_spam":
   "enable": true
   "limit_speed": 1 #20ticks
-  "buffer_mode":
-    "enable": true
+  "buffer_mode": true
 
 "anti_fly":
   "enable": true
@@ -33,7 +32,9 @@
 
 "anti_noclip":
   "enable": true
+
 "anti_anti-immobile":
   "enable": true
+
 "anti_instabreak":
   "enable": true

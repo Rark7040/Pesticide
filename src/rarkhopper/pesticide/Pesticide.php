@@ -5,6 +5,7 @@ namespace rarkhopper\pesticide;
 
 use pocketmine\plugin\PluginBase;
 use rarkhopper\pesticide\setting\RuntimeSetting;
+use rarkhopper\pesticide\utils\ConfigLoader;
 
 final class Pesticide extends PluginBase{
 	const CONF_NAME = 'config.yml';
