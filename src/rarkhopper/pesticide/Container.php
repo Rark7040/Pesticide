@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+namespace rarkhopper\pesticide;
+
+use rarkhopper\pesticide\setting\RuntimeSetting;
+
+class Container{
+	protected RuntimeSetting $setting;
+	protected AntiCheatsRegistry $registry;
+
+	public function __construct(RuntimeSetting $setting, AntiCheatsRegistry $registry){
+		$this->setting = $setting;
+		$this->registry = $registry;
+	}
+
+	public function final():void{
+		$this->registry->final();
+	}
+
+	public function getRegistry():AntiCheatsRegistry{
+		return $this->registry;
+	}
+
+	public function getSetting():RuntimeSetting{
+		return $this->setting;
+	}
+}

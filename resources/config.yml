@@ -1,0 +1,42 @@
+"base_settings":
+  # overlook = 0
+  # kick = 1
+  # ban = 2
+  "penalty": 1
+  "debug": true
+
+"anti_speed":
+  "enable": true
+  "limit_distance": 20
+
+"anti_reach":
+  "enable": true
+  "limit_distance": 3
+
+"anti_auto-clicker":
+  "enable": true
+  "limit_cps": 20
+  "left_click": true
+  "right_click": true
+
+"anti_nuker":
+  "enable": true
+  "limit_break_cnt": 10
+
+"anti_spam":
+  "enable": true
+  "limit_speed": 1 #20ticks
+  "buffer_mode": true
+
+"anti_fly":
+  "enable": true
+  "overlook_cnt": 5
+
+"anti_noclip":
+  "enable": true
+
+"anti_anti-immobile":
+  "enable": true
+
+"anti_instabreak":
+  "enable": true
