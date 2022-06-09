@@ -4,8 +4,19 @@ declare(strict_types=1);
 namespace rarkhopper\pesticide;
 
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\Config;
+use rarkhopper\pesticide\setting\AntiAntiImmobileSetting;
+use rarkhopper\pesticide\setting\AntiAutoClickerSetting;
+use rarkhopper\pesticide\setting\AntiFlySetting;
+use rarkhopper\pesticide\setting\AntiInstabreakSetting;
+use rarkhopper\pesticide\setting\AntiNoClipSetting;
+use rarkhopper\pesticide\setting\AntiNukerSetting;
+use rarkhopper\pesticide\setting\AntiReachSetting;
+use rarkhopper\pesticide\setting\AntiSpamSetting;
+use rarkhopper\pesticide\setting\AntiSpeedSetting;
+use rarkhopper\pesticide\setting\BaseSettings;
 use rarkhopper\pesticide\setting\RuntimeSetting;
-use rarkhopper\pesticide\utils\ConfigLoader;
+use rarkhopper\pesticide\utils\ArrayInterface;
 
 final class Pesticide extends PluginBase{
 	const CONF_NAME = 'config.yml';
@@ -14,7 +25,7 @@ final class Pesticide extends PluginBase{
 	protected static Container $container;
 
 	protected function onEnable():void{
-		$this->loadConfig();;
+		$this->initConfig();
 		$this->initInstance();
 		$this->initContainer();
 	}
@@ -35,14 +46,30 @@ final class Pesticide extends PluginBase{
 		return self::$container;
 	}
 
-	protected function loadConfig():void{
+	protected function initConfig():void{
 		$this->saveResource(self::CONF_NAME);
-		(new ConfigLoader($this->getConfig()))->load();
+	}
+
+	protected function getSetting(Config $conf):RuntimeSetting{
+		$conf_arr = new ArrayInterface($conf->getAll());
+
+		return new RuntimeSetting(
+			new BaseSettings($conf_arr),
+			new AntiSpeedSetting($conf_arr),
+			new AntiReachSetting($conf_arr),
+			new AntiAutoClickerSetting($conf_arr),
+			new AntiNukerSetting($conf_arr),
+			new AntiSpamSetting($conf_arr),
+			new AntiFlySetting($conf_arr),
+			new AntiNoClipSetting($conf_arr),
+			new AntiAntiImmobileSetting($conf_arr),
+			new AntiInstabreakSetting($conf_arr)
+		);
 	}
 
 	protected function initContainer():void{
 		self::$container = new Container(
-			new RuntimeSetting,
+			$this->getSetting($this->getConfig()),
 			new AntiCheatsRegistry
 		);
 	}
