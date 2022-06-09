@@ -8,7 +8,8 @@ final class SettingItemNames{
 		//NOOP
 	}
 
-	const PENALTY = 'penalty';
+	const BASE_SETTINGS = 'base_settings';
+	const BASE_SETTINGS__PENALTY = 'penalty';
 	const ANTI_SPEED = 'anti_speed';
 	const ANTI_SPEED__ENABLE = 'enable';
 	const ANTI_SPEED__LIMIT_DISTANCE = 'limit_distance';
@@ -27,7 +28,6 @@ final class SettingItemNames{
 	const ANTI_SPAM__ENABLE = 'enable';
 	const ANTI_SPAM__LIMIT_SPEED = 'limit_speed';
 	const ANTI_SPAM__BUFFER_MODE = 'buffer_mode';
-	const ANTI_SPAM__BUFFER_MODE__ENABLE = 'enable';
 	const ANTI_FLY = 'anti_fly';
 	const ANTI_FLY__ENABLE = 'enable';
 	const ANTI_FLY__OVERLOOK_CNT = 'overlook_cnt';

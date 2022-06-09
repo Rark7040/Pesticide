@@ -7,7 +7,7 @@ namespace rarkhopper\pesticide\setting;
 class RuntimeSetting{
 
 	public function __construct(
-		int $penalty,
+		BaseSettings $base_settings,
 		AntiSpeedSetting $anti_speed_setting,
 		AntiReachSetting $anti_reach_setting,
 		AntiAutoClickerSetting $anti_auto_clicker_setting,

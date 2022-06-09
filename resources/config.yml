@@ -1,7 +1,8 @@
-# overlook = 0
-# kick = 1
-# ban = 2
-"penalty": 1
+"base_settings":
+  # overlook = 0
+  # kick = 1
+  # ban = 2
+  "penalty": 1
 
 "anti_speed":
   "enable": true
