@@ -19,7 +19,8 @@ class AntiCheatsRegistry{
 		}
 	}
 
-	protected function register(AntiCheat $anti_cheat):void{
+	protected function register(AntiCheat $anti_cheat, bool $is_enabled):void{
+		if(!$is_enabled) return;
 		$anti_cheat->init();
 		$this->anti_cheats[] = $anti_cheat;
 	}
