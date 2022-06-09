@@ -11,9 +11,11 @@ class BaseSettings extends SettingItem{
 	const PENALTY_BAN = 2;
 
 	protected int $penalty;
+	protected bool $debug;
 
 	public function init(ArrayInterface $interface):void{
 		$this->penalty = $interface->getIntegerNonNull(SettingItemNames::BASE_SETTINGS__PENALTY);
+		$this->debug = $interface->getBooleanNonNull(SettingItemNames::BASE_SETTINGS__DEBUG);
 	}
 
 	public function getName():string{
@@ -22,5 +24,9 @@ class BaseSettings extends SettingItem{
 
 	public function getPenalty():int{
 		return $this->penalty;
+	}
+
+	public function isDebugMode():bool{
+		return $this->debug;
 	}
 }

@@ -3,6 +3,7 @@
   # kick = 1
   # ban = 2
   "penalty": 1
+  "debug": true
 
 "anti_speed":
   "enable": true

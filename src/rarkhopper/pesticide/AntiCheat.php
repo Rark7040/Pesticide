@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace rarkhopper\pesticide;
 
-use pocketmine\event\HandlerListManager;
 use pocketmine\event\Listener;
 use pocketmine\Server;
 

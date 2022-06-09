@@ -10,6 +10,7 @@ final class SettingItemNames{
 
 	const BASE_SETTINGS = 'base_settings';
 	const BASE_SETTINGS__PENALTY = 'penalty';
+	const BASE_SETTINGS__DEBUG = 'debug';
 	const ANTI_SPEED = 'anti_speed';
 	const ANTI_SPEED__ENABLE = 'enable';
 	const ANTI_SPEED__LIMIT_DISTANCE = 'limit_distance';
