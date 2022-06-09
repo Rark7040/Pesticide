@@ -7,11 +7,12 @@ use pocketmine\event\Listener;
 use pocketmine\Server;
 
 abstract class AntiCheat{
-	abstract public function init():void;
-	abstract public function final():void;
-
 	/** @return array<Listener> */
 	abstract public function getListeners():array;
+
+	public function init():void{
+		$this->registerListeners();
+	}
 
 	protected function registerListeners():void{
 		$plugin = Pesticide::getInstance();
