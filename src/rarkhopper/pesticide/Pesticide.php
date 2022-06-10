@@ -5,6 +5,7 @@ namespace rarkhopper\pesticide;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
+use rarkhopper\pesticide\anti_cheats\AntiCheatsRegistry;
 use rarkhopper\pesticide\setting\AntiAntiImmobileSetting;
 use rarkhopper\pesticide\setting\AntiAutoClickerSetting;
 use rarkhopper\pesticide\setting\AntiFlySetting;
@@ -28,12 +29,6 @@ final class Pesticide extends PluginBase{
 		$this->initConfig();
 		$this->initInstance();
 		$this->initContainer();
-	}
-
-	protected function onDisable():void{
-		if(isset(self::$container)){
-			self::$container->final();
-		}
 	}
 
 	public static function getInstance():self{

@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace rarkhopper\pesticide;
 
+use rarkhopper\pesticide\anti_cheats\AntiCheatsRegistry;
 use rarkhopper\pesticide\setting\RuntimeSetting;
 
 class Container{
@@ -12,10 +13,6 @@ class Container{
 	public function __construct(RuntimeSetting $setting, AntiCheatsRegistry $registry){
 		$this->setting = $setting;
 		$this->registry = $registry;
-	}
-
-	public function final():void{
-		$this->registry->final();
 	}
 
 	public function getRegistry():AntiCheatsRegistry{

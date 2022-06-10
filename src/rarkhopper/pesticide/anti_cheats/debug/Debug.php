@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace rarkhopper\pesticide\anti_cheats\debug;
 
-use rarkhopper\pesticide\AntiCheat;
+use rarkhopper\pesticide\anti_cheats\AntiCheat;
 
 class Debug extends AntiCheat{
 	public function getListeners():array{

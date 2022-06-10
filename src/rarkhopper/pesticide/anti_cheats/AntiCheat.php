@@ -1,10 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace rarkhopper\pesticide;
+namespace rarkhopper\pesticide\anti_cheats;
 
 use pocketmine\event\Listener;
 use pocketmine\Server;
+use rarkhopper\pesticide\Pesticide;
 
 abstract class AntiCheat{
 	/** @return array<Listener> */
